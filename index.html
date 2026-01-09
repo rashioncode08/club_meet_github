@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Olympus Hackathon</title>
+
+  <!-- particles.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at center, #0a0b1e, #02030a);
+      overflow: hidden;
+      font-family: "Times New Roman", serif;
+    }
+
+    #particles-js,
+    #particles-dust {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    #particles-js { z-index: 1; }
+    #particles-dust { z-index: 0; }
+
+    canvas {
+      filter:
+        drop-shadow(0 0 6px rgba(255, 211, 106, 0.9))
+        drop-shadow(0 0 14px rgba(255, 211, 106, 0.6));
+    }
+
+    .hero {
+      position: relative;
+      z-index: 2;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3.5rem;
+      letter-spacing: 3px;
+      text-shadow: 0 0 14px rgba(255, 211, 106, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="particles-dust"></div>
+  <div id="particles-js"></div>
+
+  <div class="hero">
+    <h1>OLYMPUS HACKATHON</h1>
+  </div>
+
+  <!-- YOUR config -->
+  <script src="particles-config.js"></script>
+</body>
+</html>
